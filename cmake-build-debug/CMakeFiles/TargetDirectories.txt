@@ -1,0 +1,3 @@
+D:/dev/scratch/cppproj2/cmake-build-debug/CMakeFiles/cppproj2.dir
+D:/dev/scratch/cppproj2/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/dev/scratch/cppproj2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
