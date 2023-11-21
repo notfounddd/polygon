@@ -29,7 +29,26 @@ bool isPointInside(const sf::Vector2f& point, const std::vector<sf::Vector2f>& p
     return insideCount % 2 == 1;
 }
 
+// Function to enter parameters for polygon
+
+void EnterParameters(){
+    int AmountPeakInPolygon;
+    std::vector<sf::Vector2f> vector;
+    std::cin >> AmountPeakInPolygon;
+    for (int i = 0; i < AmountPeakInPolygon; i++){
+        int CoordX;int CoordY;
+        std::cout << "Enter X and Y coordinates" << std::endl;
+        std::cin >> CoordX >> CoordY;
+        vector.push_back(sf::Vector2f (CoordX,CoordY));
+    }
+    for (int i = 0; i < vector.size(); i++){
+        std::cout << "peak number : " << i+1 << " with coordinates : " << vector[i].x << " , " << vector[i].y << std::endl;
+    }
+}
+
 int main() {
+    EnterParameters();
+
     sf::RenderWindow window(sf::VideoMode(800, 800), "SFML Concave Polygon Test");
 
     // Concave polygon15) Вершины многоугольника: (-1, -1), (-1, 4), (4, 4), (4, -1), (1, 1)
