@@ -33,16 +33,28 @@ bool isPointInside(const sf::Vector2f& point, const std::vector<sf::Vector2f>& p
 
 void EnterParameters(){
     int AmountPeakInPolygon;
-    std::vector<sf::Vector2f> vector;
+    std::vector<sf::Vector2f> polygon;
     std::cin >> AmountPeakInPolygon;
     for (int i = 0; i < AmountPeakInPolygon; i++){
         int CoordX;int CoordY;
         std::cout << "Enter X and Y coordinates" << std::endl;
         std::cin >> CoordX >> CoordY;
-        vector.push_back(sf::Vector2f (CoordX,CoordY));
+        polygon.push_back(sf::Vector2f (CoordX,CoordY));
     }
-    for (int i = 0; i < vector.size(); i++){
-        std::cout << "peak number : " << i+1 << " with coordinates : " << vector[i].x << " , " << vector[i].y << std::endl;
+    for (int i = 0; i < polygon.size(); i++){
+        std::cout << "peak number : " << i+1 << " with coordinates : " << polygon[i].x << " , " << polygon[i].y << std::endl;
+    }
+    int AmountPointInPolygon;
+    std::vector<sf::Vector2f> point;
+    std::cin >> AmountPointInPolygon;
+    for (int i = 0; i < AmountPointInPolygon; i++){
+        int CoordX;int CoordY;
+        std::cout << "Enter X and Y coordinates" << std::endl;
+        std::cin >> CoordX >> CoordY;
+        point.push_back(sf::Vector2f (CoordX,CoordY));
+    }
+    for (int i = 0; i < point.size(); i++){
+        std::cout << "point number : " << i+1 << " with coordinates : " << point[i].x << " , " << point[i].y << std::endl;
     }
 }
 
