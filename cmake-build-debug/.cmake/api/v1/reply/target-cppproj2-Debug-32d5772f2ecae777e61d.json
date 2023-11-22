@@ -24,9 +24,9 @@
 		"files" : 
 		[
 			"CMakeLists.txt",
-			"C:/SFML/lib/cmake/SFML/SFMLStaticTargets.cmake",
-			"C:/SFML/lib/cmake/SFML/SFMLConfig.cmake",
-			"C:/SFML/lib/cmake/SFML/SFMLConfigDependencies.cmake"
+			"F:/SFML/lib/cmake/SFML/SFMLStaticTargets.cmake",
+			"F:/SFML/lib/cmake/SFML/SFMLConfig.cmake",
+			"F:/SFML/lib/cmake/SFML/SFMLConfigDependencies.cmake"
 		],
 		"nodes" : 
 		[
@@ -128,7 +128,7 @@
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "C:/SFML/include"
+					"path" : "F:/SFML/include"
 				}
 			],
 			"language" : "CXX",
@@ -161,17 +161,17 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\SFML\\lib\\libsfml-graphics-s-d.a",
+				"fragment" : "F:\\SFML\\lib\\libsfml-graphics-s-d.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 7,
-				"fragment" : "C:\\SFML\\lib\\libsfml-window-s-d.a",
+				"fragment" : "F:\\SFML\\lib\\libsfml-window-s-d.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 8,
-				"fragment" : "C:\\SFML\\lib\\libsfml-system-s-d.a",
+				"fragment" : "F:\\SFML\\lib\\libsfml-system-s-d.a",
 				"role" : "libraries"
 			},
 			{
@@ -191,7 +191,7 @@
 			},
 			{
 				"backtrace" : 13,
-				"fragment" : "C:\\SFML\\lib\\libfreetype.a",
+				"fragment" : "F:\\SFML\\lib\\libfreetype.a",
 				"role" : "libraries"
 			},
 			{

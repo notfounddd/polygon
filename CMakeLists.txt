@@ -8,7 +8,7 @@ add_executable(cppproj2 main.cpp)
 set(CMAKE_EXE_LINKER_FLAGS "-static -static-libgcc")
 set(SFML_STATIC_LIBRARIES TRUE)
 
-set(SFML_DIR "C:\\SFML\\lib\\cmake\\SFML")
+set(SFML_DIR "F:\\SFML\\lib\\cmake\\SFML")
 
 target_link_libraries(cppproj2 sfml-graphics)
 

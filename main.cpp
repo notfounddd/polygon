@@ -31,7 +31,9 @@ bool isPointInside(const sf::Vector2f& point, const std::vector<sf::Vector2f>& p
 
 // Function to enter parameters for polygon
 
+//for polygon
 void EnterParameters(){
+    std::cout << "Create polygon\nEnter amount peaks :" ;
     int AmountPeakInPolygon;
     std::vector<sf::Vector2f> polygon;
     std::cin >> AmountPeakInPolygon;
@@ -41,10 +43,13 @@ void EnterParameters(){
         std::cin >> CoordX >> CoordY;
         polygon.push_back(sf::Vector2f (CoordX,CoordY));
     }
-    for (int i = 0; i < polygon.size(); i++){
-        std::cout << "peak number : " << i+1 << " with coordinates : " << polygon[i].x << " , " << polygon[i].y << std::endl;
-    }
+//    for (int i = 0; i < polygon.size(); i++){
+//        std::cout << "peak number : " << i+1 << " with coordinates : " << polygon[i].x << " , " << polygon[i].y << std::endl;
+//    }
+
+//for points
     int AmountPointInPolygon;
+    std::cout << "Create points\nEnter amount points :" ;
     std::vector<sf::Vector2f> point;
     std::cin >> AmountPointInPolygon;
     for (int i = 0; i < AmountPointInPolygon; i++){
@@ -53,14 +58,15 @@ void EnterParameters(){
         std::cin >> CoordX >> CoordY;
         point.push_back(sf::Vector2f (CoordX,CoordY));
     }
-    for (int i = 0; i < point.size(); i++){
-        std::cout << "point number : " << i+1 << " with coordinates : " << point[i].x << " , " << point[i].y << std::endl;
-    }
+//    for (int i = 0; i < point.size(); i++){
+//        std::cout << "point number : " << i+1 << " with coordinates : " << point[i].x << " , " << point[i].y << std::endl;
+//    }
+//    std::cout << polygon[2].x << polygon[3].y << point[1].x << point[2].y;
 }
 
 int main() {
     EnterParameters();
-
+/*
     sf::RenderWindow window(sf::VideoMode(800, 800), "SFML Concave Polygon Test");
 
     // Concave polygon15) Вершины многоугольника: (-1, -1), (-1, 4), (4, 4), (4, -1), (1, 1)
@@ -120,5 +126,6 @@ int main() {
         //std::cin >> input;
         window.display();
     }
+    */
     return 0;
 }
